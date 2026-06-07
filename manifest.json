@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "IMDB Play Now",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Open 3 ads + 1 movie link with one click",
   "permissions": ["tabs", "activeTab"],
   "update_url": "https://mashudparvesh.github.io/Movie-Extension/updates.xml",
