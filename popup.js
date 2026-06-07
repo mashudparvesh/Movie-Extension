@@ -106,3 +106,5 @@ document.getElementById('visitImdbBtn').addEventListener('click', () => {
 
 // ডকুমেন্ট রেডি হলে ইনিশিয়ালাইজ
 document.addEventListener('DOMContentLoaded', initPopup);
+
+console.log
