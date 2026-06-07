@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "IMDB Play Now",
+  "version": "3.1",
+  "description": "Open 3 ads + 1 movie link with one click",
+  "permissions": ["tabs", "activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "IMDB Helper"
+  }
+}

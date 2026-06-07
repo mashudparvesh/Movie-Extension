@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMDB Play</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      width: 320px;
+      padding: 1rem;
+      background: #00165a;
+    }
+    .card {
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .card-header {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+    }
+    .btn-imdb {
+      background-color: #f5c518;
+      color: #000;
+      font-weight: bold;
+    }
+    .btn-watch {
+      background: linear-gradient(90deg, #ff8c00, #ff2e00);
+      color: white;
+      font-weight: bold;
+      padding: 12px;
+    }
+    i { margin-right: 8px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="card-header"><i class="fas fa-film"></i> Pick Your Movie or TV Show & Come Back to Me</div>
+    <div class="card-body text-center">
+      <div id="visitImdbContainer">
+        <button id="visitImdbBtn" class="btn btn-imdb w-100 py-2 mb-2">
+          <i class="fas fa-external-link-alt"></i> Visit IMDB
+        </button>
+      </div>
+      <div id="watchNowContainer" style="display: none;">
+        <button id="singleWatchBtn" class="btn btn-watch w-100">
+          <i class="fas fa-play-circle"></i> Watch Now
+        </button>
+        <small class="text-muted d-block mt-2"><i class="fas fa-ad"></i> Enjoy your Time</small>
+      </div>
+      <div id="errorMsg" class="alert alert-danger mt-2" style="display: none;"></div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
